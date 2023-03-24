@@ -1,16 +1,51 @@
-
-.inline-block{
-    display:inline-block;
-    vertical-align:top;
+body{
+    background-image: url("/images/background.png");
+    background-color:black;
 }
-.logo{
-    width:23%;
+html *
+{
+   font-size: 1em;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.heroImg button{
+color:black;
+}
+.navOpt{
+    display:flex;
+    flex-direction:row;
+    padding: 10px;
+    align-items:stretch;justify-content: flex-end;
+}
+.navOpt div{
+    vertical-align:right;
+    padding:10px;
+    transition: 2s ease;
+    }
+.navOpt .About:hover{
+ background-image:linear-gradient(180deg, black, yellow);
+    }
+    .navOpt .Skills:hover{
+        background-image:linear-gradient(180deg, black, blue);
+    }
+    .navOpt .Work:hover{
+        background-image:linear-gradient(180deg, black, red);
+    }
+    .navOpt .Contact:hover{
+        background-image:linear-gradient(180deg, black, rgb(5, 177, 5));
+    }
+
+
+.logo img{
+    width:100px;
     padding:1%;
     text-align:center;
 }
+
 nav{
 width:73%;
 padding:1%;
+
 }
 ul{
     width:50%;
@@ -18,8 +53,8 @@ ul{
    
 }
 
-.heroImg{
-    height:600px;
+.heroImg img{
+    height:100px;
     padding:25px;
 }
 
@@ -32,10 +67,12 @@ footer{
     background-color:#373738;
     padding: 100px;
 }
-footer ul{
-    display:inline-block;
+footer li{
+    
     vertical-align:top;
-    padding:100px;
+    padding:10px;
+    display:flex;
+    align-items:flex-end;
 }
 .flexContainer{
     display:flex;
